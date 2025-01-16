@@ -1,6 +1,7 @@
 from langchain_core.messages import HumanMessage
 from langchain_core.prompts import ChatPromptTemplate
 from src.tools.openrouter_config import get_chat_completion
+from src.tools.gpt.gpt import ai_client
 import json
 
 from src.agents.state import AgentState, show_agent_reasoning
@@ -99,7 +100,7 @@ def portfolio_management_agent(state: AgentState):
     }
 
     # Get the completion from OpenRouter
-    result = get_chat_completion([system_message, user_message])
+    result = ai_client.get_chat_completion([system_message, user_message])
 
     # 如果API调用失败，使用默认的保守决策
     if result is None:

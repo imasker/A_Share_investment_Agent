@@ -6,6 +6,7 @@ import akshare as ak
 import requests
 from bs4 import BeautifulSoup
 from src.tools.openrouter_config import get_chat_completion, logger as api_logger
+from src.tools.gpt.gpt import ai_client
 import time
 import pandas as pd
 
@@ -233,7 +234,7 @@ def get_news_sentiment(news_list: list, num_of_news: int = 5) -> float:
 
     try:
         # 获取LLM分析结果
-        result = get_chat_completion([system_message, user_message])
+        result = ai_client.get_chat_completion([system_message, user_message])
         if result is None:
             print("Error: PI error occurred, LLM returned None")
             return 0.0

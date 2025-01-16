@@ -17,7 +17,7 @@ def get_all_stocks():
 
 
 if __name__ == "__main__":
-    today = date.today()
+    today = date.today() - timedelta(days=1)
     stocks = get_all_stocks()
     for _, stock in stocks.iterrows():
         ticker = stock['code']

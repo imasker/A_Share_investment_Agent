@@ -1,0 +1,16 @@
+2025-01-17 00:06:47,756 - api_calls - DEBUG - Logger initialization completed
+2025-01-17 00:06:47,756 - api_calls - INFO - API logging system started
+2025-01-17 00:06:47,758 - api_calls - INFO - ✓ 已加载环境变量: /Users/pufan/workspace/A_Share_investent_Agent/.env
+2025-01-17 00:06:47,759 - api_calls - INFO - ✓ Gemini 客户端初始化成功
+2025-01-17 00:07:30,900 - api_calls - DEBUG - Logger initialization completed
+2025-01-17 00:07:30,900 - api_calls - INFO - API logging system started
+2025-01-17 00:07:30,902 - api_calls - INFO - ✓ 已加载环境变量: /Users/pufan/workspace/A_Share_investent_Agent/.env
+2025-01-17 00:07:30,902 - api_calls - INFO - ✓ Gemini 客户端初始化成功
+2025-01-17 00:08:53,240 - api_calls - DEBUG - Logger initialization completed
+2025-01-17 00:08:53,240 - api_calls - INFO - API logging system started
+2025-01-17 00:08:53,242 - api_calls - INFO - ✓ 已加载环境变量: /Users/pufan/workspace/A_Share_investent_Agent/.env
+2025-01-17 00:08:53,242 - api_calls - INFO - ✓ Gemini 客户端初始化成功
+2025-01-17 00:12:57,169 - api_calls - DEBUG - Logger initialization completed
+2025-01-17 00:12:57,169 - api_calls - INFO - API logging system started
+2025-01-17 00:12:57,171 - api_calls - INFO - ✓ 已加载环境变量: /Users/pufan/workspace/A_Share_investent_Agent/.env
+2025-01-17 00:12:57,171 - api_calls - INFO - ✓ Gemini 客户端初始化成功

@@ -44,4 +44,8 @@ Thumbs.db
 # Other common files to ignore
 node_modules/
 dist/
-.DS_Store 
+.DS_Store
+
+# poetry
+install-poetry.py
+poetry.lock
