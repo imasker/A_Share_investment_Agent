@@ -1,7 +1,7 @@
 import os
 import time
 import logging
-from google import genai
+import google.generativeai as genai
 from dotenv import load_dotenv
 from dataclasses import dataclass
 import backoff
@@ -93,7 +93,7 @@ if not model:
     logger.info(f"{WAIT_ICON} 使用默认模型: {model}")
 
 # 初始化 Gemini 客户端
-client = genai.Client(api_key=api_key)
+genai.configure(api_key=api_key)
 logger.info(f"{SUCCESS_ICON} Gemini 客户端初始化成功")
 
 
@@ -112,10 +112,9 @@ def generate_content_with_retry(model, contents, config=None):
             str(contents)) > 500 else f"请求内容: {contents}")
         logger.info(f"请求配置: {config}")
 
-        response = client.models.generate_content(
-            model=model,
-            contents=contents,
-            config=config
+        client = genai.GenerativeModel(model, **config)
+        response = client.generate_content(
+            contents=contents
         )
 
         logger.info(f"{SUCCESS_ICON} API 调用成功")
