@@ -200,7 +200,7 @@ class Backtester:
                 if max_quantity > 0:
                     self.portfolio["stock"] += max_quantity
                     self.portfolio["cash"] -= max_quantity * current_price
-                    return max_quantity
+                    return max_quantity // 100 * 100
                 return 0
         elif action == "sell" and quantity > 0:
             quantity = min(quantity, self.portfolio["stock"])
