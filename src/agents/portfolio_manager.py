@@ -1,6 +1,5 @@
 from langchain_core.messages import HumanMessage
 from langchain_core.prompts import ChatPromptTemplate
-from src.tools.openrouter_config import get_chat_completion
 from src.tools.gpt.gpt import ai_client
 import json
 
